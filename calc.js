@@ -1,9 +1,23 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-  
-  readline.question(`What's your name?`, name => {
-    readline.close();
-  });
-  console.log(`Hi ${name}!`);
+var a = prompt("input the first number: ");
+var b = prompt("input the second number: ");
+var c = prompt("input an arithmetic op + - * /: ");
+var r = ""
+
+if (c === '+') {
+  r = parseInt(a) + parseInt(b) 
+};
+
+if (c === '-') {
+  r = parseInt(a) - parseInt(b) 
+};
+
+if (c === '*') {
+  r = parseInt(a) * parseInt(b) 
+};
+
+if (c === '/') {
+  r = parseInt(a) / parseInt(b) 
+};
+
+
+alert("Result:  " + r);
